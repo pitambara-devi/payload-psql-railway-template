@@ -2,6 +2,7 @@
   "name": "payload",
   "description": "A blank template to get started with Payload",
   "version": "1.0.0",
+  "node": ">=22.0.0",
   "main": "dist/server.js",
   "license": "MIT",
   "scripts": {
