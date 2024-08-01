@@ -3,7 +3,7 @@
   "description": "A blank template to get started with Payload",
   "version": "1.0.0",
   "engines": {
-    "node": "20.10.0 || >=22.0.0"
+    "node": ">=21.2.0"
   },
   "main": "dist/server.js",
   "license": "MIT",
