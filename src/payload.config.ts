@@ -24,9 +24,9 @@ export default buildConfig({
   plugins: [payloadCloud()],
   db: postgresAdapter({
     pool: {
-      connectionString: process.env.DATABASE_URI,
+      connectionString: process.env.DATABASE_URL, // 👈 use this instead of DATABASE_URI
       ssl: {
-        rejectUnauthorized: false, // 👈 this is needed for Render/Railway
+        rejectUnauthorized: false, // 👈 required for Render/Railway SSL
       },
     },
   }),
