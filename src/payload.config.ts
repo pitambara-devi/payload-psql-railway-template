@@ -25,6 +25,9 @@ export default buildConfig({
   db: postgresAdapter({
     pool: {
       connectionString: process.env.DATABASE_URI,
+      ssl: {
+        rejectUnauthorized: false, // 👈 this is needed for Render/Railway
+      },
     },
   }),
 })
